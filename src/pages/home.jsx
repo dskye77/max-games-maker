@@ -1,4 +1,3 @@
-// src/pages/Home.js   (or wherever you keep your pages)
 import React, { useEffect, useState } from "react";
 import {
   Box,
@@ -14,10 +13,11 @@ import {
   PlayArrow,
   AutoAwesome,
   Build,
-  Gavel, // Legal icon
+  Gavel,
   Palette,
   Speed,
   Security,
+  Message,
 } from "@mui/icons-material";
 
 const Home = () => {
@@ -190,7 +190,7 @@ const Home = () => {
               ))}
             </Stack>
 
-            {/* ---------- DOCUMENTATION & LEGAL ---------- */}
+            {/* ---------- DOCUMENTATION & RESOURCES ---------- */}
             <Typography
               variant="h4"
               sx={{
@@ -232,7 +232,7 @@ const Home = () => {
                 Getting Started Guide
               </Button>
 
-              {/* Legal Center (Privacy + Terms + Guidelines) */}
+              {/* Legal Center */}
               <Button
                 component="a"
                 href="/legal"
@@ -251,6 +251,27 @@ const Home = () => {
                 }}
               >
                 Legal (Privacy, Terms, Guidelines)
+              </Button>
+
+              {/* Message Us */}
+              <Button
+                component="a"
+                href="/message-us"
+                fullWidth
+                variant="outlined"
+                startIcon={<Message />}
+                sx={{
+                  justifyContent: "flex-start",
+                  py: 2.5,
+                  px: 3,
+                  fontSize: "1.05rem",
+                  fontWeight: 500,
+                  borderRadius: 3,
+                  textTransform: "none",
+                  "&:hover": { backgroundColor: "action.hover" },
+                }}
+              >
+                Message Us (Support & Data Requests)
               </Button>
             </Stack>
 

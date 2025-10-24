@@ -70,6 +70,14 @@ export default function Header() {
           >
             Legal
           </Button>
+          <Button
+            color="inherit"
+            component={RouterLink}
+            to="/message-us"
+            sx={{ fontSize: { xs: "0.8rem", sm: "0.875rem" } }}
+          >
+            Message Us
+          </Button>
         </Box>
         {/* Hamburger Menu for Mobile */}
         <IconButton
@@ -96,12 +104,11 @@ export default function Header() {
           <MenuItem onClick={handleMenuClose} component={RouterLink} to="/docs">
             Docs
           </MenuItem>
-          <MenuItem
-            onClick={handleMenuClose}
-            component={RouterLink}
-            to="/legal"
-          >
+          <MenuItem onClick={handleMenuClose} component={RouterLink} to="/legal">
             Legal
+          </MenuItem>
+          <MenuItem onClick={handleMenuClose} component={RouterLink} to="/message-us">
+            Message Us
           </MenuItem>
         </Menu>
       </Toolbar>

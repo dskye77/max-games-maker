@@ -12,11 +12,11 @@ import {
   Home as HomeIcon,
   Description as DocsIcon,
   Gavel as LegalIcon,
+  Message as MessageIcon,
 } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 export default function NotFound() {
-
   return (
     <Container maxWidth="sm" sx={{ py: { xs: 6, md: 10 } }}>
       <Paper
@@ -180,6 +180,16 @@ export default function NotFound() {
             sx={{ textTransform: "none" }}
           >
             Legal
+          </Button>
+          <Button
+            component={Link}
+            to="/message-us"
+            startIcon={<MessageIcon />}
+            size="small"
+            color="inherit"
+            sx={{ textTransform: "none" }}
+          >
+            Message Us
           </Button>
         </Box>
 

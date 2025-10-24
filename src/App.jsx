@@ -5,6 +5,7 @@ import Legal from "./pages/legal";
 import DocsIndex from "./pages/DocsIndex";
 import DocPage from "./pages/DocPage";
 import NotFound from "./pages/NotFound";
+import MessageUs from "./pages/MessageUs";  // <-- Add this import
 
 import { Box } from "@mui/material";
 
@@ -16,6 +17,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/legal" element={<Legal />} />
+        <Route path="/message-us" element={<MessageUs />} />  {/* <-- Add this route */}
 
         {/* DOCS */}
         <Route path="/docs" element={<DocsIndex />} />
