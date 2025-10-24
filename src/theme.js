@@ -116,15 +116,6 @@ const maxPuzzleGamesMakerTheme = createTheme({
           padding: "10px 24px",
           fontWeight: 600,
           textTransform: "none",
-          boxShadow: "0 4px 12px rgba(103, 58, 183, 0.25)",
-          transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-          "&:hover": {
-            transform: "translateY(-2px)",
-            boxShadow: "0 8px 20px rgba(103, 58, 183, 0.35)",
-          },
-          "&:active": {
-            transform: "translateY(0)",
-          },
         },
         containedPrimary: {
           background: "linear-gradient(45deg, #7c4dff 30%, #5e35b1 90%)",
