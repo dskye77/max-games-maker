@@ -15,7 +15,7 @@ export default function DocsIndex() {
   const lastUpdate = "October 2025";
 
   return (
-    <Container maxWidth="md" sx={{ py: { xs: 4, md: 8 } }}>
+    <Container maxWidth="lg" sx={{ py: { xs: 4, md: 8 } }}>
       <Paper
         elevation={3}
         sx={{

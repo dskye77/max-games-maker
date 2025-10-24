@@ -13,7 +13,6 @@ const TutorialImage = ({
       elevation={2}
       sx={{
         p: 2,
-        borderRadius: 2,
         maxWidth,
         mx: "auto",
       }}
@@ -47,4 +46,4 @@ const TutorialImage = ({
 );
 
 export default TutorialImage;
-`   `
+`   `;

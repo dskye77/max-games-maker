@@ -473,10 +473,7 @@ const TeleporterMaze = {
       </DocSection>
 
       {/* EXAMPLE TABLE */}
-      <DocSection
-        title="Example: 3x3 Grid Win Path (#2 → #6 → #13 → #9 → #8 END)"
-        icon={<GridOn />}
-      >
+      <DocSection title="Example: 3x3 Grid Win Path" icon={<GridOn />}>
         <Typography
           variant="body2"
           color="text.secondary"

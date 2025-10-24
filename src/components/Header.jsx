@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { AppBar, Toolbar, Typography, Button, Box, IconButton, Menu, MenuItem } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  Box,
+  IconButton,
+  Menu,
+  MenuItem,
+} from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -17,8 +26,7 @@ export default function Header() {
 
   return (
     <AppBar position="static" sx={{ backgroundColor: "#1976d2" }}>
-      <Toolbar sx={{ px: { xs: 1, sm: 2 } }}> {/* Responsive padding */}
-        {/* Brand / Title */}
+      <Toolbar sx={{ px: { sm: 2, md: 4 } }}>
         <Typography
           variant="h5"
           component="div"
@@ -30,7 +38,6 @@ export default function Header() {
         >
           Max Games Maker
         </Typography>
-
         {/* Navigation Links */}
         <Box
           sx={{
@@ -64,7 +71,6 @@ export default function Header() {
             Legal
           </Button>
         </Box>
-
         {/* Hamburger Menu for Mobile */}
         <IconButton
           color="inherit"
@@ -90,7 +96,11 @@ export default function Header() {
           <MenuItem onClick={handleMenuClose} component={RouterLink} to="/docs">
             Docs
           </MenuItem>
-          <MenuItem onClick={handleMenuClose} component={RouterLink} to="/legal">
+          <MenuItem
+            onClick={handleMenuClose}
+            component={RouterLink}
+            to="/legal"
+          >
             Legal
           </MenuItem>
         </Menu>
