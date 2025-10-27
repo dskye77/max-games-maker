@@ -220,14 +220,15 @@ const TeleporterMaze = {
                   >
                     <li>Select a cell for the next path step.</li>
                     <li>
-                      Enter the next teleporter number (e.g., 5) in one of the 4
-                      bottom panel input boxes (use 0 to clear).
+                      Click on the cell to activate its input field. Enter the
+                      next teleporter number (e.g., 5) directly into the cell's
+                      input (use 0 to clear). The teleporter will automatically
+                      create and display as you type.
                     </li>
                     <li>
-                      Click <strong>"Set Teleporters"</strong> (orange) to add
-                      the colored marker. Repeat for the full chain.
+                      Repeat for the full chain, ensuring the last teleporter
+                      leads to the End cell.
                     </li>
-                    <li>Ensure the last teleporter leads to the End cell.</li>
                   </Box>
                   <Typography
                     variant="caption"
@@ -259,8 +260,8 @@ const TeleporterMaze = {
             <Grid item xs={12} sm={6}>
               <TutorialImage
                 src="/images/docs/teleporter-set-tps.png"
-                alt="Bottom panel with teleporter number inputs"
-                caption="Set #5 to continue from #1. Build a chain like #1 → #5 → #8 → #21 → End."
+                alt="Cell with direct teleporter input"
+                caption="Click a cell and enter #5 directly to set it. Build a chain like #1 → #5 → #8 → #21 → End."
                 width={250}
                 maxWidth="100%"
               />
