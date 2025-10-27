@@ -53,7 +53,7 @@ const TeleporterMaze = {
           }}
         >
           Players navigate using a joystick, teleporting via numbered
-          teleporters to unlock paths, aiming to reach the <strong>END</strong>
+          teleporters to unlock paths, aiming to reach the <strong>END </strong>
           cell to solve the maze.
         </Typography>
 
@@ -448,7 +448,11 @@ const TeleporterMaze = {
             </ListItemIcon>
             <ListItemText
               primary="8. Save"
-              secondary="Click <strong>“Save”</strong> to finalize your maze for players."
+              secondary={
+                <>
+                  Click <strong>Save</strong> to finalize your maze for players.
+                </>
+              }
               primaryTypographyProps={{
                 fontSize: { xs: "0.875rem", sm: "1rem" },
               }}
